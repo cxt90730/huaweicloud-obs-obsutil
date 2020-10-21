@@ -12,11 +12,11 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
 	"os"
 	"path/filepath"
-	"progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
 	"strings"
 )
 

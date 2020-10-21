@@ -12,8 +12,8 @@
 package main
 
 import (
-	"assist"
-	"command"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command"
 	"runtime"
 )
 

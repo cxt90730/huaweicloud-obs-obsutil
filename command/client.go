@@ -12,8 +12,8 @@
 package command
 
 import (
-	"assist"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"os"
 	"strings"
 )

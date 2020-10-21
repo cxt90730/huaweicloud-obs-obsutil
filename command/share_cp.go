@@ -12,18 +12,18 @@
 package command
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"bufio"
-	"command/i18n"
-	"concurrent"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/concurrent"
 	"fmt"
 	"io"
 	"net/url"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"os"
 	"path/filepath"
-	"progress"
-	"ratelimit"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/ratelimit"
 	"strings"
 	"sync/atomic"
 )

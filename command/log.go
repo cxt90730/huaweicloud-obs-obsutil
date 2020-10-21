@@ -12,7 +12,7 @@
 package command
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"fmt"
 	"log"
 	"os"

@@ -14,7 +14,7 @@ package ratelimit
 import (
 	"errors"
 	"io"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"time"
 )
 

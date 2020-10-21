@@ -12,7 +12,7 @@
 package progress
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"gopkg.in/cheggaaa/pb.v2"
 	"sync"
 	"sync/atomic"

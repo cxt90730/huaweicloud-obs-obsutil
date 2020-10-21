@@ -12,13 +12,13 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
-	"concurrent"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/concurrent"
 	"encoding/xml"
 	"fmt"
-	"obs"
-	"progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
 	"strings"
 	"time"
 )

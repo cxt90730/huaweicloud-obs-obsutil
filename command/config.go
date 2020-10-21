@@ -12,10 +12,10 @@
 package command
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"bufio"
 	"bytes"
-	"command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
 	"crypto/aes"
 	"crypto/cipher"
 	"encoding/base64"

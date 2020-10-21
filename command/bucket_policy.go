@@ -13,13 +13,13 @@
 package command
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"bytes"
-	"command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"os"
 	"strings"
 )

@@ -12,9 +12,9 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 )
 
 const obsUtilVersion = "5.1.13"

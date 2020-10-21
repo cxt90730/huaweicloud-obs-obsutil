@@ -12,11 +12,11 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
-	"concurrent"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/concurrent"
 	"fmt"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"sync"
 	"sync/atomic"
 )

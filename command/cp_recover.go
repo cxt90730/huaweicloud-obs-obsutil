@@ -12,13 +12,13 @@
 package command
 
 import (
-	"assist"
-	"concurrent"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/concurrent"
 	"fmt"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"os"
-	"progress"
-	"ratelimit"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/ratelimit"
 	"regexp"
 	"strings"
 	"sync/atomic"

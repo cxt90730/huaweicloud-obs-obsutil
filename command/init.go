@@ -12,13 +12,13 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
 	"flag"
 	"math/rand"
 	"os"
 	"os/signal"
-	"progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
 	"regexp"
 	"runtime/debug"
 	"sort"

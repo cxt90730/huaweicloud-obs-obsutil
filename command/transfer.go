@@ -12,15 +12,15 @@
 package command
 
 import (
-	"assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
 	"encoding/xml"
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
 	"os"
-	"progress"
-	"ratelimit"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/ratelimit"
 	"strings"
 	"sync"
 	"sync/atomic"
