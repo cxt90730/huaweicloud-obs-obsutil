@@ -622,11 +622,8 @@ func (c *parallelContextCommand) prepareDownloadFileCheckpoint(bucket, key, vers
 
 	var tempFileUrl string
 
-	if _tempFileUrl, err := uuid.NewV4(); err != nil {
-		tempFileUrl = assist.HexMd5(assist.StringToBytes(fileUrl))
-	} else {
-		tempFileUrl = _tempFileUrl.String()
-	}
+	_tempFileUrl := uuid.NewV4()
+	tempFileUrl = _tempFileUrl.String()
 
 	if dir := c.tempFileDir; dir != "" {
 		tempFileUrl = assist.NormalizeFilePath(dir + "/" + fmt.Sprintf("%s.obs.temp", tempFileUrl))

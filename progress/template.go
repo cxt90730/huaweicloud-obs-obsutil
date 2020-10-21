@@ -47,11 +47,6 @@ func InitCustomizeElements(colorful bool) {
 
 	registerElement("cspeed", speedEl, false)
 
-	unsafeFuncs := pb.UnsafeDefaultTemplateFuncs
-	unsafeFuncs["tpsBarColor"] = tpsBarColorFunc(colorful)
-	unsafeFuncs["speedBarColor"] = speedBarColorFunc(colorful)
-	unsafeFuncs["speedColor"] = speedColorFunc(colorful, speed)
-
 	tpsSpeed := &tpsSpeed{}
 	var rtimeEl pb.ElementFunc = func(state *pb.State, args ...string) string {
 		if !state.IsFinished() {

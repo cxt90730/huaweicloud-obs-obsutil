@@ -826,11 +826,8 @@ func (c *reportCommand) ensureOutputDirectory() error {
 		return err
 	}
 
-	taskId, err := uuid.NewV4()
-	if err == nil {
-		c.taskId = fmt.Sprintf("%s", taskId)
-	}
-
+	taskId := uuid.NewV4()
+	c.taskId = fmt.Sprintf("%s", taskId)
 	timeSuffix := assist.FormatUtcNow(timeSuffixDateFormat)
 	failedReportFile := fmt.Sprintf("%s/%s_failed_report_%s_%s.txt", c.outDir, c.getKey(), timeSuffix, c.taskId)
 	failedfd, err := assist.OpenFile(failedReportFile, os.O_CREATE, 0640)

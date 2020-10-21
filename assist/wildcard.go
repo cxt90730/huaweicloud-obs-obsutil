@@ -45,9 +45,8 @@ func newWildcardMasker(wildcard, target string) *wildcardMasker {
 	w := &wildcardMasker{}
 	w.wildcard = wildcard
 	w.target = target
-	if placeHolder, err := uuid.NewV4(); err == nil {
-		w.placeHolder = placeHolder.String()
-	}
+	placeHolder := uuid.NewV4()
+	w.placeHolder = placeHolder.String()
 	return w
 }
 

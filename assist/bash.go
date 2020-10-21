@@ -50,10 +50,7 @@ func EnterBashMode(additionalTips func(), callback func(value string)) {
 }
 
 func PreprocessInput(input string) (string, string, bool, error) {
-	_placeHolder, err := uuid.NewV4()
-	if err != nil {
-		return "", "", false, err
-	}
+	_placeHolder := uuid.NewV4()
 	placeHolder := _placeHolder.String()
 	length := utf8.RuneCountInString(input)
 	temp := make([]string, 0, length)

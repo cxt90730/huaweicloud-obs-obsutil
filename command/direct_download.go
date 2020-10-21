@@ -112,11 +112,7 @@ func initDirectDownload() command {
 		if (err != nil && (isObsFolder(originFileUrl) || strings.HasSuffix(originFileUrl, "\\"))) || (err == nil && stat.IsDir()) {
 			fileName := key
 			if fileName == "" {
-				_fileName, err := uuid.NewV4()
-				if err != nil {
-					printf("Error: Cannot generate the random file name, err:%s", err.Error())
-					return assist.ErrExecuting
-				}
+				_fileName := uuid.NewV4()
 				fileName = _fileName.String()
 				printf("The resolved file name is empty, will use the random file name [%s] instead", fileName)
 			} else if index := strings.LastIndex(fileName, "/"); index >= 0 {
