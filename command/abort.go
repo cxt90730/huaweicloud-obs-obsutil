@@ -12,12 +12,12 @@
 package command
 
 import (
-	"assist"
-	"command/i18n"
-	"concurrent"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/command/i18n"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/concurrent"
 	"fmt"
-	"obs"
-	"progress"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/assist"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/obs"
+	"github.com/cxt90730/huaweicloud-obs-obsutil/progress"
 	"sync/atomic"
 	"time"
 )
@@ -28,7 +28,6 @@ type abortCommand struct {
 }
 
 func (c *abortCommand) abortMultipartUpload(bucket, key, uploadId string, batchFlag int) bool {
-
 	abortHandler := func() {
 		c.failedLogger.doRecord("Bucket [%s], key [%s], upload id [%s], n/a, n/a, error code [%s], error message [%s], n/a", bucket, key, uploadId,
 			"AbortError", "Task is aborted")
